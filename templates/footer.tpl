@@ -20,6 +20,20 @@
 
 	<script defer src="{relative_path}/assets/nodebb.min.js?{config.cache-buster}"></script>
 
+		<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+    <script>
+    var clipboard = new ClipboardJS('.copy_path');
+
+    clipboard.on('success', function(e) {
+        // code success copy
+    });
+
+    clipboard.on('error', function(e) {
+        console.log('copy path failed', e);
+    });
+    </script>
+
 	{{{each scripts}}}
 	<script defer type="text/javascript" src="{scripts.src}"></script>
 	{{{end}}}

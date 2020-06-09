@@ -8,7 +8,9 @@
 				{breadcrumbs.text}
 				<!-- IF @last -->
 				<!-- IF !feeds:disableRSS -->
-				<!-- IF rssFeedUrl --><a target="_blank" href="{rssFeedUrl}" itemprop="item"><i class="fa fa-rss-square"></i></a><!-- ENDIF rssFeedUrl --><!-- ENDIF !feeds:disableRSS -->
+					<!-- IF rssFeedUrl --><a target="_blank" href="{rssFeedUrl}" itemprop="item"><i class="fa fa-rss-square"></i></a><!-- ENDIF rssFeedUrl -->
+					<!-- IF forumPath --><a href="#" class="copy_path" data-clipboard-text="{forumPath}" itemprop="item"><i class="fa fa-files-o"></i></a><!-- ENDIF forumPath -->
+				<!-- ENDIF !feeds:disableRSS -->
 				<!-- ENDIF @last -->
 			</span>
 		<!-- IF !@last --></a><!-- ENDIF !@last -->
