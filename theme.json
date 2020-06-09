@@ -1,5 +1,5 @@
 {
-  "id": "nodebb-theme-persone",
+  "id": "nodebb-theme-persone-custom-btn",
   "name": "Persone",
   "description": "Custom theme for NodeBB. Uses a standard approach to forum design.",
   "url": "https://github.com/lyskoivan/nodebb-theme-persona",
